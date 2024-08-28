@@ -11,8 +11,9 @@ const ProductItem = ({ product }) => {
     <div className="product-item">
       <img src={product.image} alt={product.name} />
       <h2>{product.name}</h2>
-      <p>Price: ${product.price}</p>
-      <button onClick={addToCart}>Add to Cart</button>
+      <p>Precio: ${product.price}</p>
+      <p>Profesor: {product.teacher_id}</p>
+      <button onClick={addToCart}>Agregar al carrito</button>
     </div>
   );
 };
